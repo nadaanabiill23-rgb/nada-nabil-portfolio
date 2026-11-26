@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Study | Qudrato</title>
+  <meta
+    name="description"
+    content="Case study: Qudrato"
+  />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet"></head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span>NN</span><strong>Nada Nabil</strong></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#process">Process</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="index.html#contact">Contact</a>
+  </header>
+
+  <main>
+    <section class="detail-hero">
+      <p class="eyebrow">Case Study 01 | Qudrato</p>
+      <h1>Building a scalable learning and assessment experience for the Saudi Qudrat exam.</h1>
+      <p>Qudrato helps students prepare for the Saudi General Aptitude Test (Quantitative and Verbal). It is a subscription-based mobile app for the Saudi market.</p>
+      <div class="detail-meta"><span>Role: Product Manager / Product Owner / UX Designer</span><span>EdTech, subscription mobile app</span><span>Saudi Arabia</span></div>
+    </section>
+    <section class="case-strip" aria-label="Case summary">
+      <div><small>Challenge</small><p>A released app whose code, design, flows and interactions needed to change.</p></div>
+      <div><small>Approach</small><p>Restructure the product and redesign every flow, including a placement test students can skip.</p></div>
+      <div><small>Scope</small><p>Restructure, redesign and flow specifications. Ongoing work: flows, curriculum decisions, and fit with the official exam.</p></div>
+      <div><small>Status</small><p>Ongoing. I am still working on it.</p></div>
+    </section>
+    <section class="cv" aria-label="Case at a glance"><div class="cv-inner" style="--c:var(--sky)"><div class="cv-stats"><div class="cv-stat"><strong>20</strong><span>questions in the placement test</span></div><div class="cv-stat"><strong>120</strong><span>questions in the full preparation test</span></div><div class="cv-stat"><strong>8/7</strong><span>daily challenge split, alternating with 7/8</span></div><div class="cv-stat"><strong>2</strong><span>tracks: Quantitative and Verbal</span></div></div><div><p class="cv-label">How a skill is classified (rule I defined)</p><div class="cv-bar"><span class="b1" style="flex:50">Weak: under 50%</span><span class="b2" style="flex:30">Developing: 50% to under 80%</span><span class="b3" style="flex:20">Strong: 80%+</span></div></div><div><p class="cv-label">Where it stands</p><div class="cv-steps"><div class="cv-step done"><b>Earlier version</b>Released</div><div class="cv-step now"><b>Restructure</b>Ongoing</div><div class="cv-step now"><b>Flows and curriculum</b>Ongoing</div><div class="cv-step now"><b>Official exam fit</b>Ongoing</div></div></div><p class="cv-note">Numbers are from the specifications I wrote.</p></div></section>
+    <section class="detail-body">
+      <aside class="detail-toc"><a href="#problem">Why the restructure</a><a href="#decision">Decision example</a><a href="#overview">Product focus</a><a href="#decisions">Specified for the restructure</a><a href="#role">My role</a><a href="#deliverables">Deliverables</a></aside>
+      <article class="detail-content">
+        <section id="status"><h2>What this covers</h2><div class="detail-grid"><div><strong>Current work</strong><span>Ongoing. I am still working on the flows and the curriculum decisions: how the content fits the official exam and is genuinely useful to students before they sit it. Restructure and redesign are in progress.</span></div><div><strong>Release status</strong><span>An earlier version of the app is released. The restructured product, redesigned flows and the specifications below are current work in progress.</span></div><div><strong>Employer</strong><span>Tara Digital. June 2026 to present</span></div></div></section>
+        <section id="problem"><h2>Why the restructure started</h2><p>The app already had a released version. The team is now rebuilding its structure, design and flows because:</p><ul class="cs-list"><li>The code was not well organized.</li><li>The design needed to change and be more interactive.</li><li>Many user flows were missing.</li><li>Interactions in the app were not smooth or well suited to the experience.</li></ul>
+<p>The direction for the learning experience: a faster question plan, questions ordered by student level and refreshed so students do not keep seeing the same ones, and a question bank where students can review their past answers, the corrections and the solutions to wrong answers.</p></section>
+        <section id="decision"><h2>Decision example: starting without a placement test</h2>
+<p>Should a new student have to finish the placement test before using the app? I specified that they should not. Students can skip it and keep practicing, and the app builds its picture of them from their answers.</p>
+<div class="flow" aria-label="Flow: skip placement test">
+  <div class="flow-step"><small>1</small><strong>Student skips</strong><span>Placement status saved as Skipped. No final result is created.</span></div>
+  <div class="flow-step"><small>2</small><strong>Practice starts</strong><span>Default difficulty is Medium until there is enough data.</span></div>
+  <div class="flow-step"><small>3</small><strong>Answers build data</strong><span>Each skill stays "Insufficient Data" until 5 scored answers.</span></div>
+  <div class="flow-step"><small>4</small><strong>Skill is classified</strong><span>Weak, Developing or Strong, skill by skill.</span></div>
+</div>
+<div class="detail-grid">
+<div><strong>Rules I defined</strong><span>Skipping never blocks the app. Accuracy counts scored answers only, not unanswered questions. Each skill is classified on its own data. Weak is under 50%, Developing is 50% to under 80%, Strong is 80% or more.</span></div>
+<div><strong>Kept separate on purpose</strong><span>Skipping the test does not grant any subscription or access. Paid content still depends on the student's entitlement. The placement test status and the skill classification are two different states.</span></div>
+<div><strong>Actors and dependencies</strong><span>Student, mobile app, backend, adaptive engine, subscription service and entitlement service. The flow depends on sessions, student profile, performance tracking, training sessions and subscription management.</span></div>
+<div><strong>Return path</strong><span>A student who skipped can come back and take the placement test later, unless they already completed it. A completed test cannot be retaken.</span></div>
+</div>
+<p>My part was the flow itself: the rules, the actors, the edge cases and the acceptance criteria that engineering builds against. The adaptive engine and the interface work are separate parts of the product.</p></section>
+        <section id="overview"><h2>Product focus</h2><p>I worked on product discovery and current-state analysis, competitor analysis, and improvement priorities based on subscription growth and churn reduction goals.</p></section><section id="decisions"><h2>Specified for the restructure</h2><div class="detail-grid"><div><strong>Placement test</strong><span>Fixed length of 20 questions per student. An adaptive engine selects questions across Quantitative and Verbal tracks.</span></div><div><strong>Daily challenge</strong><span>Requires an active subscription. Mixes Quantitative and Verbal questions, alternating the split between 8/7 and 7/8.</span></div><div><strong>Full preparation test</strong><span>120 questions following the exam blueprint. No feedback during the test; corrections after it.</span></div><div><strong>Question bank</strong><span>Content taxonomy, Quantitative and Verbal tracks, difficulty levels, mixed sources, and a question reporting mechanism.</span></div><div><strong>Gamification</strong><span>Daily streaks, XP rewards, achievement badges and daily challenge mechanics.</span></div><div><strong>Subscription and monetization</strong><span>Plans, free trial, coupon and discount logic, RevenueCat-related requirements.</span></div><div><strong>Marketing and ASO</strong><span>Arabic SEO keywords, Google Play description, App Store keywords, listing optimization, release notes.</span></div></div></section><section id="role"><h2>My role</h2><ul class="cs-list"><li>Product discovery and current-state analysis.</li><li>Competitor analysis and product opportunities.</li><li>Strategy for question banks and learning experiences.</li><li>Learning journeys and assessment experiences.</li><li>Requirements and business rules for educational features.</li><li>App Store and Google Play optimization and positioning.</li></ul></section><section id="deliverables"><h2>Deliverables</h2><ul class="cs-list"><li>Product audit</li><li>Competitor analysis</li><li>Product discovery priorities</li><li>Question bank strategy</li><li>Content matrix</li><li>Question bank admin requirements</li><li>Placement test, daily challenge and full test specifications</li><li>Gamification rules</li><li>Subscription and coupon UX requirements</li><li>App Store and Google Play content</li></ul></section>
+      </article>
+    </section>
+  </main>
+  <script src="interactions.js"></script>
+</body>
+</html>
